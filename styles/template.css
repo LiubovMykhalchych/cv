@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+body {
+    padding-top: 10vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    background-color: white;
+}
+
+header > * {
+    display: inline-block;
+    position: absolute;
+}
+
+div#change-language {
+    margin-left: 5%;
+    font: 14px Arial, Helvetica, sans-serif;
+    font-size: calc(min(1.6vw, 1.6vh));
+}
+
+div#change-language > p#title-change-language:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#change-language > div#select-language {
+    position: absolute;
+    display: none;
+    width: 10vw;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+div#change-language > div#select-language > div.language {
+    padding-left: 15%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div#change-language > div#select-language > div.language:hover {
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+div#header-title {
+    font-family: 'Podkova', serif, cursive;
+    font-size: calc(min(4vw, 4vh));
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+div#explorer {
+    right: 0;
+    margin-right: 5%;
+    max-width: 30%;
+    text-align: center;
+    font: 14px Arial, Helvetica, sans-serif;
+    font-size: calc(min(1.6vw, 1.6vh));
+}
+
+div#explorer > div.explorer-elem {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+div#explorer > div.explorer-elem:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+    div#explorer {
+        max-width: 26%;
+    }
+}
+
+div#background-image {
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    position: fixed;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+}
+
+div#title {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-family: 'Noto Serif', serif;
+    font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 130px;
+}
+
+div#footer {
+    width: calc(100% - 50px);
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    color: rgb(41, 41, 41);
+    padding-top: 32px;
+    padding-left: 50px;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    background-image: url(../images/footer-background.png);
+    background-repeat: repeat repeat;
+}
+
+p#copyright {
+    font-size: smaller;
+    letter-spacing: 1px;
+}
+
+p#social-icons > a {
+    text-decoration: none;
+    color: rgb(54, 150, 86);
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+img.social-icon {
+    display: inline-block;
+    width: 12px;
+    margin-right: 3px;
+}
