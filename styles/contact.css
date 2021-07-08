@@ -1,5 +1,5 @@
 div#container {
-    width: calc(150px + (500 - 150) * ((100vw - 320px) / (1440 - 320)));
+    width: calc(200px + (400 - 200) * ((100vw - 320px) / (1440 - 320)));
     margin-top: 70px;
     margin-bottom: 100px;
     padding-top: 50px;
@@ -36,7 +36,7 @@ div#container > hr {
 div#container > form > div:not(#submit-form) {
     position: relative;
     margin: auto;
-    width: calc(80px + (500 - 80) * ((100vw - 320px) / (1440 - 320)));
+    width: calc(150px + (300 - 150) * ((100vw - 320px) / (1440 - 320)));
     max-width: calc(100% - 2px);
 }
 

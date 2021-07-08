@@ -99,6 +99,16 @@ div#explorer > div.explorer-elem:hover {
     }
 }
 
+@media screen and (max-width: 500px) {
+    div#explorer {
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
 div#background-image {
     width: 100%;
     height: 90vh;

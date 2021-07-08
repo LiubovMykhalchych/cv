@@ -1,5 +1,5 @@
 div#container {
-    width: calc(150px + (700 - 150) * ((100vw - 320px) / (1440 - 320)));
+    width: calc(200px + (600 - 200) * ((100vw - 320px) / (1440 - 320)));
     margin-top: 70px;
     margin-bottom: 100px;
     padding-top: 50px;
@@ -22,7 +22,9 @@ div#container.no-reviews {
 
 div#container > p#container-title {
     text-indent: 20px;
-    font-size: 40px;
+    font-family: 'Podkova', serif, cursive;
+    font-size: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
+    font-weight: bold;
     text-align: center;
 }
 
